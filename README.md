@@ -14,14 +14,15 @@ sknw: skeleton analysis in Python.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/sknw-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/sknw-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/sknw-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/sknw-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/sknw-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/sknw-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/sknw-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/sknw-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sknw/badges/version.svg)](https://anaconda.org/conda-forge/sknw)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/sknw/badges/downloads.svg)](https://anaconda.org/conda-forge/sknw)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-sknw-green.svg)](https://anaconda.org/conda-forge/sknw) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/sknw.svg)](https://anaconda.org/conda-forge/sknw) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/sknw.svg)](https://anaconda.org/conda-forge/sknw) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/sknw.svg)](https://anaconda.org/conda-forge/sknw) |
 
 Installing sknw
 ===============
