@@ -1,7 +1,5 @@
 {% set name = "sknw" %}
-{% set version = "0.13" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "c0d3a3ecec7d1d359aa5bc42751309a6472a62c409d9ae38132990d300f049ae" %}
+{% set version = "0.15" %}
 
 package:
   name: '{{ name|lower }}'
@@ -10,12 +8,12 @@ package:
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ hash_value }}
+  sha256: 9d482f6eb98d26a1836c92c63a94bea9f9f4b8073dcaa608b3824e54df0c522e
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -43,5 +41,5 @@ about:
   dev_url: 'https://github.com/yxdragon/sknw'
 
 extra:
-  recipe-maintainers: 
+  recipe-maintainers:
     - yxdragon
