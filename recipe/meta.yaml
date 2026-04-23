@@ -1,21 +1,19 @@
 {% set name = "sknw" %}
-{% set version = "0.13" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "c0d3a3ecec7d1d359aa5bc42751309a6472a62c409d9ae38132990d300f049ae" %}
+{% set version = "0.14" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ hash_value }}
+  sha256: 905c0e55a45d96bb922fe120dacc516f29632f5d94c98273519ab9082fc2c3d9
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -36,12 +34,12 @@ about:
   home: https://github.com/yxdragon/sknw
   license: BSD 3-clause
   license_family: BSD
-  license_file: 'LICENSE'
+  license_file: LICENSE
   summary: Analysis of object skeletons
   description: 'sknw: skeleton analysis in Python.'
-  doc_url: 'https://github.com/yxdragon/sknw'
-  dev_url: 'https://github.com/yxdragon/sknw'
+  doc_url: https://github.com/yxdragon/sknw
+  dev_url: https://github.com/yxdragon/sknw
 
 extra:
-  recipe-maintainers: 
+  recipe-maintainers:
     - yxdragon
